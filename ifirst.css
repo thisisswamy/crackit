@@ -126,6 +126,7 @@ nav ul li a.active {
     color: white;
     letter-spacing: 3px;
     font-weight: 600;
+    background-size: 100% 100%;
 }
 
 

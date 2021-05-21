@@ -1,0 +1,36 @@
+.top-section {
+    height: 60px;
+    background-color: aquamarine;
+    color: red;
+    padding-left: 2ch;
+    border-radius: 10px;
+    border-style: groove;
+    padding-bottom: 18px;
+}
+
+.last-Date {
+    background-color: yellow;
+    width: 600px;
+}
+
+.top-2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 2ch;
+    background-repeat: no-repeat;
+    color: rgb(82, 6, 6);
+    font-weight: 100;
+    background-size: auto;
+}
+
+.Link {
+    color: red
+}
+
+.top-2 h4 {
+    color: blue;
+}
+
+.top-2 img {
+    height: 450px;
+    width: auto;
+}

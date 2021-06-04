@@ -108,7 +108,7 @@
     
     .banner {
         margin-top: 0ch;
-        height: 80vh;
+        height: 50vh;
         text-align: center;
         background-image: url(home.jpeg);
         background-position: center;
@@ -170,13 +170,13 @@
     /*RECENT JOBS---*/
     
     h5 {
-        height: 10vh;
+        height: auto;
         font-size: 20px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         border-radius: 5px;
         border-style: groove;
         text-align: center;
-        padding-top: 1ch;
+        padding-top: 1px;
         background-image: linear-gradient(to right, #258eda, #e9f3f7);
     }
     

@@ -1,0 +1,68 @@
+        body {
+            font-family: Tahoma;
+        }
+        
+        .companies-container {
+            display: flex;
+        }
+        
+        .company {
+            flex: 1;
+            height: 50px;
+            width: 60px;
+            border-radius: 5px;
+            border-color: rgb(239, 245, 229);
+            border-style: groove;
+            text-align: center;
+            padding-top: 2ch;
+            margin-left: 2ch;
+            margin-right: 2ch;
+            margin-top: 3ch;
+        }
+        
+        .company {
+            margin-right: 20px;
+            background-color: white;
+            color: white;
+        }
+        /* Box Shadow 1*/
+        /*
+        .company {
+            -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+            -moz-box-shadow: 3px 3px 5px 6px #ccc;
+            box-shadow: 3px 3px 5px 6px #ccc;
+        } */
+        /* Box Shadow 2*/
+        
+        .company {
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+        }
+        
+        .company:hover {
+            cursor: pointer;
+            margin-top: 1px;
+            -webkit-transition: margin 0.7s ease-out;
+            -moz-transition: margin 0.7s ease-out;
+            -o-transition: margin 0.7s ease-out;
+        }
+        /*Entire page Container*/
+        
+        .Container-1 {
+            height: 100vh;
+            width: auto;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+        /*Page Heading */
+        
+        .Container-1 h1 {
+            font-family: 'Courier New', Courier, monospace;
+            height: auto;
+            width: auto;
+            display: block;
+            border-style: inherit;
+            color: white;
+            border-radius: 10px;
+            padding: 8px;
+            background-image: linear-gradient(to left, #1bc540, #850e5d);
+        }

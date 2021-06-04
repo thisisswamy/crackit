@@ -1,7 +1,7 @@
 .top-section {
     height: 60px;
-    background-color: aquamarine;
-    color: red;
+    background-image: linear-gradient(to left, #b1a111, #22b2eb);
+    color: rgb(243, 241, 241);
     padding-left: 2ch;
     border-radius: 10px;
     border-style: groove;

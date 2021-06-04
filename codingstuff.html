@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Stuff</title>
+    <link rel="stylesheet" href="codingstuff.css">
+    <link rel="stylesheet" href="ifirst.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">CRACK IT</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+         <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobpool.html">Jobs Pool</a></li>
+            <li><a href="codingstuff.html">Coding Stuff</a></li>
+            <!--<li><a href="#">About us</a></li>-->
+        </ul>
+        <script type="text/javascript">
+            const currentLocation = location.href;
+            const menuItem = document.querySelectorAll("a");
+            const menuLength = menuItem.length
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItem[i].href === currentLocation) {
+                    menuItem[i].className = "active"
+                }
+            }
+        </script>
+    </nav>
+    <div class="Container-1">
+        <!--<h1><b>Coding Stuff</b></h1>-->
+        <!--First start of Row ----------------------->
+        <div class="companies-container">
+
+            <div class="company magenta">
+                <a href="tcsQuestions.html"> T C S </a>
+            </div>
+
+            <!--
+             <div class="company green">
+                <a href="#"> ACCENTURE </a>
+            </div>
+            <div class="company green">
+                <a href="#">N C R  </a>
+            </div>
+         -->
+        </div>
+        <!--End of Row ---------------------------->
+
+    </div>
+
+
+
+</body>
+
+</html>

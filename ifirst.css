@@ -1,0 +1,284 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+    /* Title editing*/
+    
+    .logo {
+        font-size: 33px;
+        color: white;
+        font-weight: 600;
+    }
+    /* menu bar -- blue color home/coding stuff extra ---->*/
+    
+    nav {
+        height: 60px;
+        /*background: #ebb248; */
+        /*background-image: linear-gradient(to right, #6db9ef, #7ce08a);*/
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px 0px 100px;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+    /* menu iteams editing*/
+    
+    nav ul li {
+        padding: 0 8px;
+    }
+    /* links of  menu bar*/
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 8px 10px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    /* links of  menu bar and keep active link*/
+    
+    nav ul li a:hover {
+        background: white;
+        color: #1b1b1b;
+    }
+    
+    nav ul li a.active {
+        background: white;
+        color: #1b1b1b;
+    }
+    /*Menu Bar for mobile view*/
+    
+    .menu-btn i {
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    #click {
+        display: none;
+    }
+    /*For Mobile view Editing*/
+    
+    @media (max-width:940px) {
+        .menu-btn i {
+            display: block;
+        }
+        #click:checked~.menu-btn i::before {
+            content: "\f00d";
+        }
+        nav ul {
+            position: absolute;
+            top: 60px;
+            left: -100%;
+            /*background: rgb(47, 182, 216);*/
+            /* background-image: linear-gradient(to right, #6db9ef, #7ce08a);*/
+            background-color: black;
+            height: 30vh;
+            width: 100%;
+            display: block;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+        #click:checked~ul {
+            left: 0%;
+        }
+        nav ul li {
+            margin: 4px 0;
+        }
+        nav ul li a {
+            font-size: 20px;
+            display: block;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: rgb(2, 32, 32);
+            background: white;
+        }
+    }
+    /*Home Page --->*/
+    
+    .banner {
+        margin-top: 0ch;
+        height: 50vh;
+        text-align: center;
+        background-image: url(home.jpeg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        letter-spacing: 3px;
+        font-weight: 600;
+        background-size: 100% 100%;
+    }
+    /*Heading jobs*/
+    
+    .banner h1 {
+        padding-top: 100px;
+        font-size: 50px;
+        letter-spacing: 6px;
+        font-weight: 600;
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .banner a {
+        color: rgb(231, 102, 16);
+    }
+    
+    #recruiters {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    
+    #recruiters h3 {
+        text-align: center;
+        padding-bottom: 40px;
+        font-size: 3.5ch;
+    }
+    
+    h3::before {
+        content: '';
+        background-image: linear-gradient(to right, #6db9ef, #7ce08a);
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        z-index: -10;
+        margin-top: -15px;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 90px;
+    }
+    
+    .pic {
+        height: 60px;
+        width: 160px;
+        border-radius: 5px;
+        border-color: black;
+        margin-left: 5px;
+    }
+    
+    .companies {
+        padding-top: 3ch;
+        text-align: center;
+    }
+    /*RECENT JOBS---*/
+    
+    h5 {
+        height: auto;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 5px;
+        border-style: none;
+        text-align: center;
+        color: white;
+        padding-top: 1px;
+        padding: 8px;
+        /*background-image: linear-gradient(to right, #258eda, #e9f3f7); */
+        background-color: black;
+    }
+    
+    #jobs {
+        background: #f8f8fa;
+        padding: 2px 0;
+        margin-top: 1ch;
+        /* home image to below blocks padding*/
+    }
+    
+    .company-details {
+        box-shadow: 0 2px 70px 0 rgba(110, 130, 208, .18);
+        border-radius: 5px;
+        margin-bottom: 23px;
+        /* BETWEEN BOX PADDING*/
+        margin-top: 0px;
+        margin-left: 8ch;
+        margin-right: 8ch;
+        background-image: linear-gradient(to to left, #6db9ef, #7ce08a);
+    }
+    
+    .company-details:hover {
+        cursor: pointer;
+        margin-top: 2px;
+        -webkit-transition: margin 0.1s ease-out;
+        -moz-transition: margin 0.1s ease-out;
+        -o-transition: margin 0.1s ease-out;
+    }
+    /*In side company*/
+    
+    .company-details {
+        background: white;
+        padding: 2px 20px;
+        border-radius: 10px;
+        border-style: groove;
+        border-color: rgb(21, 173, 243);
+        background-image: linear-gradient(to left, #6db9ef, #7ce08a);
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    }
+    
+    .job-update {
+        background: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-image: linear-gradient(to left, #6db9ef, #7ce08a);
+    }
+    
+    .job-update.fa {
+        margin-top: 5px;
+        margin-right: 10px;
+        color: #77d1b1;
+        padding-left: 2ch;
+    }
+    
+    .read-more {
+        text-align: right;
+    }
+    
+    .read-more a {
+        color: rgb(240, 14, 14);
+        font-weight: bold;
+    }
+    
+    .read-more a:hover {
+        color: rgb(242, 242, 243);
+    }
+    /*Footer */
+    
+    .footer {
+        height: auto;
+        width: auto;
+        background-color: #1b1b1b;
+    }
+    
+    .float-container {
+        border: 3px solid;
+        padding: 20px;
+        border-bottom: 10px;
+    }
+    
+    .float-child {
+        width: 50%;
+        float: left;
+        padding: 20px;
+        border: 2px;
+        text-decoration: #6db9ef;
+        color: white
+    }
+    
+    .social-media {
+        color: white;
+    }
+    
+    .PS-comp {
+        color: rgb(17, 161, 228);
+    }
+    
+    .PS-comp:hover {
+        color: red;
+    }
